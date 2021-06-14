@@ -1,9 +1,26 @@
+/* ........... universal styles........ */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+/* ...........temporary styles so can see structural build */
+
+*{
+    padding: 0.5rem;
+    border: 1px solid rgb(222,222,222);
+}
+
+body {
+    border: none;
+}
+html {
+    border: none;
+}
+
+/* .........image styles......... */
+.bg-img {
+    background-image: url('/assets/the-sleep-co-lamp.jpg');
+    background-size: cover;
 }
