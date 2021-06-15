@@ -23,4 +23,21 @@ html {
 .bg-img {
     background-image: url('/assets/the-sleep-co-lamp.jpg');
     background-size: cover;
+    min-height: 10rem;
+}
+
+/* ....... universal styles and utility class */
+
+.padded { padding: 5%;}
+.paddedsmall { padding: 1rem;}
+
+.bg-dark {
+    background-color: #192B37;
+    color: white;
+}
+
+/* .........section styles...... */
+
+header {
+    min-height: 40vh;
 }

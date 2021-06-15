@@ -3,14 +3,17 @@
 <!-- this is the head of our html where we add extra resource and metadata. this is where all the info that is not displayed on screen is mentioned like gridlex, googlefont... -->
 <head>
 <!-- Need to add a title. this text  will appear in SE as well as in the tab of the browser -->
-    <title> test </title>
+    <title> the sleep.co </title>
 
 <!-- NOTE: add metadata ref on top of our CSS link so they don't overwrite our own stylesheet-->
 
 <!-- this is our grid stylesheet  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
-<!-- this is our google fonts -->
 
+<!-- this is our fontawsome icons fonts -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 <!-- this is our css stylesheet connection instruction: link + what + where -->
@@ -20,53 +23,114 @@
 <!-- In the body, this is where all the content that will show on website -->
 
 <body>
+
 <!-- .....................header................... -->
 
-    <header>
-        <h3> sleep like a baby</h3>
-        <h1> the ultimate mattress solution</h1>
+    <header class="padded grid-middle">
+        <div class="col-12-middle">
+            <h3> sleep like a baby</h3>
+            <h1> the ultimate mattress solution</h1>
+        </div>
     </header>
      
 <!-- .................gallery section.................. -->
 
     <section class="grid">
-        <div>
+        <div class="padded col-6">
             <h2> build to last a lifetime </h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio iste eius unde, dolorem sed sit eligendi veritatis ab ea autem blanditiis atque in corporis asperiores impedit nobis voluptates fuga!
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio iste eius unde, dolorem sed sit eligendi
+                veritatis ab ea autem blanditiis atque in corporis asperiores impedit nobis voluptates fuga!
             </p>
         </div>
-        <div class="bg-img">
-            image
+        <div class="col-6 bg-img">
+            
         </div>
-        <div class="bg-img">
-            image
+        <div class="col-6 bg-img">
+            
         </div>
-        <div>
+        <div class="padded col-6">
             <h2> so soft you'll met </h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio iste eius unde, dolorem sed sit eligendi veritatis ab ea autem blanditiis atque in corporis asperiores impedit nobis voluptates fuga!
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore optio iste eius unde, dolorem sed sit eligendi
+                veritatis ab ea autem blanditiis atque in corporis asperiores impedit nobis voluptates fuga!
             </p>
         </div>
     </section>
 
 <!-- .................dark banner symbol grid section.................. -->
-    <section>
-        <h2></h2>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>  
+
+    <section class="bg-dark padded grid";>
+        <div class="paddedsmall col-12">
+            <h2> features you will love</h2>
+        </div>
+        <div class="paddedsmall col-3">
+            <i class="fas fa-cloud"></i>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam saepe corporis sapiente expedita illum dolorem
+                corrupti quasi ex distinctio quod similique, necessitatibus fuga dignissimos consequuntur asperiores assumenda ipsam
+                impedit!
+            </p>
+        </div>
+        <div class="paddedsmall col-3">
+            <i class="fas fa-cloud"></i>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam saepe corporis sapiente expedita illum dolorem
+                corrupti quasi ex distinctio quod similique, necessitatibus fuga dignissimos consequuntur asperiores assumenda ipsam
+                impedit!
+            </p>
+        </div>
+        <div class="paddedsmall col-3">
+            <i class="fas fa-cloud"></i>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam saepe corporis sapiente expedita illum dolorem
+                corrupti quasi ex distinctio quod similique, necessitatibus fuga dignissimos consequuntur asperiores assumenda ipsam
+                impedit!
+            </p>
+        </div>
+        <div class="paddedsmall col-3">
+            <i class="fas fa-cloud"></i>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam saepe corporis sapiente expedita illum dolorem
+                corrupti quasi ex distinctio quod similique, necessitatibus fuga dignissimos consequuntur asperiores assumenda ipsam
+                impedit!
+            </p>
+        </div>  
     </section>
-<!-- ................. banner section.................. -->
-    <section>
-                
+
+<!-- ................. image banner section.................. -->
+
+    <section class="padded">
+        <h3> never underestimate the power of a good night sleep</h3>         
     </section>
+
 <!-- ................. quote section.................. -->
-    <section>
-                
+
+    <section class="padded grid">
+          <div class="col-1">
+                <span> " </span>
+          </div>   
+          <div class="col-10">
+                <p> OMG I've never experimented a mattress like this before, best night sleeps ever. I want to buy one for the whole family </p>
+                <p> a very happy customer </p>
+          </div>  
+          <div class="col-1">
+            <span> " </span>
+          </div>     
     </section>
+
 <!-- .........................footer.................. -->
-    <footer>
-        
+
+    <footer class="bg-dark padded grid-spaceBetween">
+        <div class="col-4">
+            <h2> let's connect </h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eius, assumenda neque cum ullam odit? Sint aliquid,
+                repellendus optio quidem culpa fugiat libero consectetur vitae, aut ex iure, sunt repudiandae?</p>
+        </div>
+        <div class="col-5">
+            <p> call: +1233446666 </p>
+            <p> email: hello@thesleep.co </p>
+            <p> store: 66 sleep street, chicago, USA </p>
+            <p> instagram: @thesleepco </p>
+        </div>
     </footer>
 
 
