@@ -45,6 +45,7 @@ section {
 
 .padded         { padding: 5%;}
 .paddedsmall    { padding: 1rem;}
+.paddedlarge    { padding: 10%;}
 
 .text-left      { text-align: left ;}
 .text-center    { text-align: center ;}
@@ -76,7 +77,27 @@ section {
 .font-weight-xbold  {font-weight: 800;}
 
 .text-small {font-size: 1.5rem;}
-.text-big {font-size: 4.5rem;}
+.text-medium {
+    font-size: 2rem;
+    line-height: 1.1;}
+.text-big   {font-size: 4.5rem;}
+
+.quote-icon {
+    font-size: 6rem;
+    display: block; 
+    /* note: span are inline elements so better to set it as inline-block for easier alignment */
+    color: rgb (120,125,128);
+    /* the below is to adjust the alignment */
+    line-height: 1;
+
+}
+.subtitle {
+    font-size: 1.2rem;
+    color: rgb (120,125,128);
+}
+
+/* p.emphasis {} */
+
 
 h2 {
     font-size: 2.2rem;
@@ -144,3 +165,8 @@ header h3 {
     margin-bottom: 2rem;
     font-size: 2.8rem;
 }
+
+
+/* QUESTION: 
+1. why cloud icons had to set as block and our quotes as inline-block since there are both inline elements that needed to be aligned?
+2. why when applied text-medium to the div of the h3 quote the format would not apply to the quote text? */
