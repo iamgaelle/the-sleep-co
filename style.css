@@ -33,7 +33,7 @@ section {
     border: 1px solid rgb(222,222,222);
 }
 
-/* .........universal image styles......... */
+/* ..............universal image styles.............. */
 
 .bg-img {
     background-image: url('/assets/the-sleep-co-lamp.jpg');
@@ -41,7 +41,7 @@ section {
     /* min-height: 10rem; */
 }
 
-/* ....... universal styles and utility class */
+/* ........... universal styles and utility class........ */
 
 .padded         { padding: 5%;}
 .paddedsmall    { padding: 1rem;}
@@ -64,18 +64,28 @@ section {
 
 }
 
-.featuredcolor-text {color: #FFBE00;}
+
 
 /* ....................typography styles..................... */
+
+.featuredcolor-text {color: #FFBE00;}
+.whitecolor-text {color: white;}
 
 .font-weight-normal {font-weight: normal;}
 .font-weight-light  {font-weight: 200;}
 .font-weight-xbold  {font-weight: 800;}
 
+.text-small {font-size: 1.5rem;}
+.text-big {font-size: 4.5rem;}
+
 h2 {
     font-size: 2.2rem;
     line-height: 1.1;
     margin-bottom: 1rem;
+}
+
+h3 {
+    line-height: 1.1;
 }
 
 p {
@@ -88,7 +98,8 @@ p {
 p:last-child {
     margin-bottom: 0;
   }
-/* .........header styles...... */
+
+/* .........header styles.......... */
 
 header {
     background-image: url('/assets/the-sleep-co-white.jpg');
@@ -119,7 +130,7 @@ header h3 {
 .bg-bannerimg {
     background-image: url('/assets/the-sleep-co-yellow.jpg');
     background-size: cover;
-    background-position: 90% 50%;
+    background-position: 50% 53%;
 }
 
 /* .........symbols feauture section styles........ */
