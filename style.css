@@ -1,4 +1,9 @@
-/* ........... universal styles........ */
+
+/* colors: 
+yellow: #FFBE00
+Navy: #192B37 */
+
+/* ........... universal styles default settings........ */
 * {
     padding: 0;
     margin: 0;
@@ -7,10 +12,12 @@
 
 /* ...........temporary styles so can see structural build */
 
-*{
+/* *{
     padding: 0.5rem;
     border: 1px solid rgb(222,222,222);
-}
+} */
+
+/* ........... universal styles ........ */
 
 body {
     border: none;
@@ -22,29 +29,95 @@ html {
     border: none;
 }
 
-/* .........image styles......... */
+section {
+    border: 1px solid rgb(222,222,222);
+}
+
+/* .........universal image styles......... */
+
 .bg-img {
     background-image: url('/assets/the-sleep-co-lamp.jpg');
     background-size: cover;
-    min-height: 10rem;
+    /* min-height: 10rem; */
 }
 
 /* ....... universal styles and utility class */
 
-.padded { padding: 5%;}
-.paddedsmall { padding: 1rem;}
+.padded         { padding: 5%;}
+.paddedsmall    { padding: 1rem;}
 
-.text-left { text-align: left ;}
-.text-center { text-align: center ;}
-.text-right { text-align: right ;}
+.text-left      { text-align: left ;}
+.text-center    { text-align: center ;}
+.text-right     { text-align: right ;}
+
+.tall100vh       {min-height: 100vh;}
+.tall80vh       {min-height: 80vh;}
+.tall70vh       {min-height: 70vh;}
+.tall60vh       {min-height: 60vh;}
+.tall50vh       {min-height: 50vh;}
+.tall40vh       {min-height: 40vh;}
+
 
 .bg-dark {
     background-color: #192B37;
     color: white;
+
 }
 
-/* .........section styles...... */
+.featuredcolor-text {color: #FFBE00;}
+
+/* ....................typography styles..................... */
+
+.font-weight-normal {font-weight: normal;}
+.font-weight-light  {font-weight: 200;}
+.font-weight-xbold  {font-weight: 800;}
+
+h2 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* NOTE: this selection allows to target only last child of a parent container */
+p:last-child {
+    margin-bottom: 0;
+  }
+/* .........header styles...... */
 
 header {
-    min-height: 40vh;
+    background-image: url('/assets/the-sleep-co-white.jpg');
+    background-size: cover ;
+    background-position: center;
+
+}
+
+header h3 {
+    font-size: 5rem;
+    line-height: 1;
+}
+
+/* .........background image styles......... */
+
+.bg-img1 {
+    background-image: url('/assets/the-sleep-co-lamp.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img2 {
+    background-image: url('/assets/the-sleep-co-pug.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-bannerimg {
+    background-image: url('/assets/the-sleep-co-yellow.jpg');
+    background-size: cover;
+    background-position: 90% 50%;
 }
