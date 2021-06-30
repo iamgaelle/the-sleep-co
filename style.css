@@ -67,17 +67,25 @@ a:hover {
 .tall50vh       {min-height: 50vh;}
 .tall40vh       {min-height: 40vh;}
 
+.left     {  text-align: left;     }
+.right    {  text-align: right;    }
+.centered {  text-align: center;   }
 
 .bg-dark {
     background-color: #192B37;
     color: white;
-
 }
+
+.bg-light {
+    background-color: #FFBE00;
+}
+
 
 
 /* ....................typography styles..................... */
 
 .featuredcolor-text {color: #FFBE00;}
+.featureddark-text {color: #192B37}
 .whitecolor-text {color: white;}
 
 .font-weight-normal {font-weight: normal;}
@@ -107,15 +115,15 @@ a:hover {
 /* p.emphasis {} */
 
 
-h2 {
-    font-size: 2.2rem;
-    line-height: 1.1;
+h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
-h3 {
-    line-height: 1.1;
+h2 {
+    font-size: 2.2rem;
 }
+
 
 p {
     font-weight: 200;
