@@ -47,8 +47,12 @@ a:hover {
 .bg-img {
     background-image: url('/assets/the-sleep-co-lamp.jpg');
     background-size: cover;
-    /* min-height: 10rem; */
+    min-height: 10rem;
 }
+
+.landscape { padding-bottom: 65%;}
+.portrait { padding-bottom: 125%;}
+.square { padding-bottom: 100%;}
 
 /* ........... universal styles and utility class........ */
 
@@ -78,6 +82,9 @@ a:hover {
 
 .bg-light {
     background-color: #FFBE00;
+}
+.bg-lightblue {
+    background-color: lightblue;
 }
 
 
@@ -172,6 +179,12 @@ footer a {
     background-image: url('/assets/the-sleep-co-yellow.jpg');
     background-size: cover;
     background-position: 50% 53%;
+}
+
+/* .......card styling........... */
+
+.card h3 {
+    margin-top: 1rem;
 }
 
 /* .........symbols feauture section styles........ */
