@@ -54,18 +54,30 @@
 <!-- .......contact form........ -->
 
 <section class="grid padded bg-dark">
+
     <div class="col-6 padded">
         <h2> let's 
             <br /> <span class="featuredcolor-text">connect</span> 
         </h2>
         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aspernatur doloremque sit blanditiis at, ex tenetur</p>
-    </div class="col-6 padded">
-        <h2>ADD CONTACT FORM HERE</h2>
+    </div>
+
+    <div class="col-6 padded">
         <form>
+<!--     <form action="https://formspree.io/hello@company.com" method="POST"> -->
+                <!-- <label for="_name"> Your Name </label> -->
+                <input type="text" name="_name" id="_name" placeholder="Your Name" />
+
+            <!-- <label for="_replyto"> Your Email </label> -->
+            <input type="email" name="_replyto" id="_replyto" placeholder="Your Email" />
+
+            <!-- <label for="message"> We would love to hear from you... </label> -->
+            <textarea name="message" id="message" placeholder="Tell us what you want to say..."></textarea>
+
+            <button class="bg-light" type="submit"> SUBMIT </button>
+<!--       <input type="submit" value="Send" class="button"> -->
 
         </form>
-    <div>
-
     </div>
 </section>
 

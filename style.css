@@ -84,7 +84,7 @@ a:hover {
     background-color: #FFBE00;
 }
 .bg-lightblue {
-    background-color: lightblue;
+    background-color:rgb(209, 233, 243);
 }
 
 
@@ -197,6 +197,51 @@ footer a {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2.8rem;
+}
+
+/* .........contact form styling.......... */
+
+
+/* ......form styling....... */
+
+form input, 
+form textarea {
+  width: 100%;
+  margin: 0.2rem 0;
+  /*  NOTE: applied 2 values and o for left and right so it is all aligned in the left  */
+  padding: 0.5rem;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+/* NOTE: by default textarea use default font so need to overwrite with the below, same applies for font size   */
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #FFBE00;
+}
+
+textarea {
+  min-height: 30vh;
+}
+
+/* NOTE: labels are are inline elements so need to be set as block elements so it can accept the vertical marging and padding  */
+/* form label {
+  margin-top: 1rem;
+  display: block;
+  color: #6C7A89;
+  font-weight: bold;
+} */
+
+form button {
+  /* background-color:#6C7A89; */
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  letter-spacing: 0.1em;
+  /* margin: 0.5rem 0; */
+  width: 100%;
 }
 
 
