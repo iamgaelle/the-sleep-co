@@ -171,15 +171,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
 }
 
-h2 {
-    font-size: 2.2rem;
-}
-h3 {
-    font-size: 1.8rem;
-}
-h4 {
-    font-size: 1.5rem;
-}
+h2 {font-size: 2.2rem;}
+h3 {font-size: 1.8rem;}
+h4 {font-size: 1.5rem;}
 
 p {
     font-weight: 200;
@@ -198,9 +192,9 @@ a {
     /* border-bottom: 1px solid; */
 }
 
-/* a:hover{
+a:hover{
     color: #FFBE00;
-} */
+}
 
 .text-left      { text-align: left ;}
 .text-center    { text-align: center ;}
@@ -249,7 +243,7 @@ header {
     background-image: url('/assets/the-sleep-co-white.jpg');
     background-size: cover ;
     background-position: center;
-    padding: 1% 5%;
+    padding: 1.5% 5%;
 
 }
 
@@ -257,6 +251,19 @@ header h3 {
     font-size: 5rem;
     line-height: 1;
 }
+
+.logo h2 {
+    margin-bottom: 0;
+}
+
+nav a {
+    text-decoration: none;
+    border: none;
+    color: inherit;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
 footer a {
     border: none;
 
@@ -280,16 +287,18 @@ footer a {
     font-size: 2.8rem;
 }
 
+
+
 /* .........................contact form styling................ */
 
 form input, 
 form textarea {
   width: 100%;
   display: block;
-  margin: 0.2rem 0;
-  /*  NOTE: applied 2 values and o for left and right so it is all aligned in the left  */
+  margin: 0.3rem 0;
+  /*  NOTE: applied 2 values and 0 for left and right so it is all aligned in the left  */
   padding: 0.5rem;
-  border: 2px solid rgb(220,220,220);
+  /* border: 2px solid rgb(220,220,220); */
   outline: none;
 /* NOTE: by default textarea use default font so need to overwrite with the below, same applies for font size   */
   font-family: inherit;
@@ -302,7 +311,8 @@ form textarea:focus {
 }
 
 textarea {
-  min-height: 30vh;
+  /* min-height: 20vh; */
+  margin-bottom: 0.5rem;
 }
 
 /* NOTE: labels are are inline elements so need to be set as block elements so it can accept the vertical marging and padding  */
@@ -321,9 +331,12 @@ form button {
   letter-spacing: 0.1em;
   /* margin: 0.5rem 0; */
   width: 100%;
+  appearance: none;
+  margin-top: 0;
 }
 
 
 /* QUESTION: 
 1. why cloud icons had to set as block and our quotes as inline-block since there are both inline elements that needed to be aligned?
-2. why when applied text-medium to the div of the h3 quote the format would not apply to the quote text? */
+2. why when applied text-medium to the div of the h3 quote the format would not apply to the quote text?
+3. it looks like the space between the input, textarea and button is not even, I tried to inspect but I struggled to interpret what is going on */
