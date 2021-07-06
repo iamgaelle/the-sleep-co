@@ -437,10 +437,10 @@ NOTE: divide 400 / 16 as 1 em=16px*/
     }
     html { font-size: 12px;}
 
-    /* QUESTION: Don't understand the below */
-    .xxs-stack { 
+ 
+    [class*="grid"] .xxs-stack { 
       flex-basis: 100%; 
-      max-width: 50%;
+      max-width: 100%;
     }
   
     
