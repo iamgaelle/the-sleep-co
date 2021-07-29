@@ -1,5 +1,15 @@
 ---
 layout: default
+cards:
+ - heading: small heading
+   desctription: this is a little description jsut to give some placeholder text
+   featured_image: /images/the-sleep-co-original1.jpg
+ - heading: small heading
+   desctription: this is a little description jsut to give some placeholder text
+   featured_image: /images/the-sleep-co-original2.jpg
+ - heading: small heading
+   desctription: this is a little description jsut to give some placeholder text
+   featured_image: /images/the-sleep-co-original3.jpg
 ---
 
 <!-- ..................header section.............. -->
@@ -59,33 +69,24 @@ layout: default
 <!-- ..............cards section.................. -->
 
 <section class="grid padded">
+
+    {% for item in page.cards %}
+
     <div class="col-4 paddedsmall">
         <div class="card">
-            <div class="bg-img portrait"> </div>
+            <!-- Note: to make easy for clients to change images, instead of adding background-image to our CSS, we create an inline style in our HTML element tag and inside it, we set the background-image property - 
+                then instead of adding url(‘ ‘) as the property value, we replace that with a loop called {{item.featured_image}}. And with that, under each object of our array, we add another variable with the same name where we will set the URL path to our images. 
+                put _image is to make it more user friendly with cloudcanon-->
+            <div class="bg-img portrait" style="background-image: url('{{item.featured_image}}')"> </div>
             <div class="padded-1">
-                <h3> little heading </h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsa neque</p>
+                <h3> {{item.heading}} </h3>
+                <p> {{item.description}} </p>
             </div>
         </div> 
     </div>
-    <div class="col-4 paddedsmall">
-        <div class="card">
-            <div class="bg-img portrait"> </div>
-            <div class="padded-1">
-                <h3> little heading </h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsa neque</p>
-            </div>
-        </div> 
-    </div>
-    <div class="col-4 paddedsmall">
-        <div class="card">
-            <div class="bg-img portrait"> </div>
-            <div class="padded-1">
-                <h3> little heading </h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsa neque</p>
-            </div>
-        </div> 
-    </div> 
+    
+    {% endfor %}
+    
 </section>
 
 <!-- ................. dark banner section.................. -->
