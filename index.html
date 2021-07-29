@@ -1,5 +1,15 @@
 ---
 layout: default
+features:
+ - icon: fas fa-cloud
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam saepe corporis sapiente expedita illum doloremcorrupti quasi ex distinctio quod similique, necessitatibus fuga dignissimos consequuntur asperiores assumenda ipsam
+   impedit!
+ - icon: fas fa-moon
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam saepe corporis sapiente expedita illum dolorem corrupti quasi ex distinctio quod similique.
+ - icon:
+   description:
+ - icon:
+   description:   
 ---
 
 
@@ -52,42 +62,18 @@ layout: default
 
 <!-- .................dark banner symbol grid section.................. -->
 
-    <section class="bg-dark padded grid">
+    <section class="bg-dark padded grid-center">
         <div class="paddedsmall col-12 text-center">
             <h2> <span class="featuredcolor-text">features</span> you will love</h2>
         </div>
+
+        {% for item in page.features %}
         <div class="paddedsmall col-3_sm-6 xxs-stack">
-            <i class="fas fa-cloud"></i>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam saepe corporis sapiente expedita illum dolorem
-                corrupti quasi ex distinctio quod similique, necessitatibus fuga dignissimos consequuntur asperiores assumenda ipsam
-                impedit!
-            </p>
+            <i class="{{item.icon}}"></i>
+            <p> {{item.description}} </p>
         </div>
-        <div class="paddedsmall col-3_sm-6 xxs-stack">
-            <i class="fas fa-cloud"></i>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam saepe corporis sapiente expedita illum dolorem
-                corrupti quasi ex distinctio quod similique, necessitatibus fuga dignissimos consequuntur asperiores assumenda ipsam
-                impedit!
-            </p>
-        </div>
-        <div class="paddedsmall col-3_sm-6 xxs-stack">
-            <i class="fas fa-cloud"></i>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam saepe corporis sapiente expedita illum dolorem
-                corrupti quasi ex distinctio quod similique, necessitatibus fuga dignissimos consequuntur asperiores assumenda ipsam
-                impedit!
-            </p>
-        </div>
-        <div class="paddedsmall col-3_sm-6 xxs-stack">
-            <i class="fas fa-cloud"></i>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam saepe corporis sapiente expedita illum dolorem
-                corrupti quasi ex distinctio quod similique, necessitatibus fuga dignissimos consequuntur asperiores assumenda ipsam
-                impedit!
-            </p>
-        </div>  
+        {% endfor %}
+
     </section>
 
 <!-- ................. image banner section.................. -->
