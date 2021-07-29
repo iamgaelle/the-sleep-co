@@ -344,7 +344,8 @@ form button {
 
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md, 
+.mobile-menu {
 	display: none;
 }
 
@@ -361,6 +362,7 @@ form button {
 
   .show-md { display: block; }
   .hide-md { display: none;  }
+  
 
   .md-tall80 {min-height: 80vh;}
 }
