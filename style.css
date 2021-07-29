@@ -122,24 +122,33 @@ a:hover {
     background-color:rgb(209, 233, 243);
 }
 
-.landscape     { padding-bottom: 66%;  }
-.portrait-tall { padding-bottom: 175%; }
-.portrait      { padding-bottom: 125%; }
-.square        { padding-bottom: 100%; }
-
-
-/* Individual image styles */
-
-
 .bg-img {
     background-image: url('/assets/the-sleep-co-lamp.jpg');
     background-size: cover;
+    background-position: center; 
     background-repeat: no-repeat;
+    background-color: rgb(240,240,240);
+    
     /* min-height: 10rem; */
     /* QUESTION: Why this overwrite the tall class when applying the col-middle as per in the video? 
     and why when trying the square option the responsive class does work when bg image applied to parent container, but work only if bg image is separate and inside..... not sure what that means?*/
 }
 
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
+/* Individual image styles */
 
 .bg-img1 {
     background-image: url('/assets/the-sleep-co-lamp.jpg');
@@ -316,7 +325,11 @@ footer a {
     font-size: 2.8rem;
 }
 
+/* .......................gallery page styling................. */
 
+.gallery [class*="col-"] {
+    padding: 0.5%;
+  }
 
 /* .........................contact form styling................ */
 
