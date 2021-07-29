@@ -1,10 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!-- this is the head of our html where we add extra resource and metadata. this is where all the info that is not displayed on screen is mentioned like gridlex, googlefont... -->
+<head>
+<!-- Need to add a title. this text  will appear in SE as well as in the tab of the browser -->
+    <title> the sleep.co </title>
 
----
-layout: default
----
+<!-- NOTE: add metadata ref on top of our CSS link so they don't overwrite our own stylesheet-->
+
+<!-- Viewport meta for responsive -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- this is our grid stylesheet  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+<!-- this is our googlefont stylesheet (catamaran 200,400,500, 800) -->
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet" />
 
 
-<!-- .....................header................... -->
+<!-- this is our fontawsome icons fonts -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- this is our css stylesheet connection instruction: link + what + where -->
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<!-- In the body, this is where all the content that will show on website -->
+
+<body>
+
+    <!-- .....................header................... -->
 
     <header class="grid text-center tall100vh md-tall80">
         <div class="col-12 header-nav grid-top">
@@ -131,3 +157,24 @@ layout: default
 
 
 
+
+
+<!-- .........................footer.................. -->
+<footer class="bg-dark padded grid-spaceBetween">
+    <div class="col-4-bottom">
+        <h2> let's 
+            <br /> <span class="featuredcolor-text">connect</span> 
+        </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eius, assumenda neque cum ullam odit? Sint aliquid,
+            repellendus optio quidem culpa fugiat libero consectetur vitae, aut ex iure, sunt repudiandae?</p>
+    </div>
+    <div class="col-5-bottom">
+        <p> <strong>call</strong>: <a href="tel:#">+181423259897</a> </p>
+        <p> <strong>email</strong>: <a href="mailto#">hello@thesleep.co</a> </p>
+        <p> <strong>store</strong>: <a href="#"> 66 sleep street, chicago, USA</a> </p>
+        <p> <strong>instagram</strong>: <a href="https://www.instagram/thesleepco"></a> @thesleepco </p>
+    </div>
+</footer>
+
+</body>
+</html>
