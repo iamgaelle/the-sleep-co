@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html>
-<!-- this is the head of our html where we add extra resource and metadata (gridlex, googlefont...) -->
+<!-- this is the head of our html where we add extra resource and metadata. this is where all the info that is not displayed on screen is mentioned like gridlex, googlefont... -->
 <head>
+<!-- Need to add a title. this text  will appear in SE as well as in the tab of the browser -->
+    <title> the sleep.co </title>
 
-    <title> about </title>
-
-<!-- NOTE: add metadata ref on top of our CSS link -->
+<!-- NOTE: add metadata ref on top of our CSS link so they don't overwrite our own stylesheet-->
 
 <!-- Viewport meta for responsive -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- gridlex   -->
+<!-- this is our grid stylesheet  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
 
-<!--  googlefont (catamaran 200,400,500, 800) -->
+<!-- this is our googlefont stylesheet (catamaran 200,400,500, 800) -->
 <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,100;1,200;1,400;1,600;1,800&display=swap" rel="stylesheet" />
 
-<!-- fontawsome -->
+
+<!-- this is our fontawsome icons fonts -->
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-<!-- our css stylesheet link -->
+<!-- this is our css stylesheet connection instruction: link + what + where -->
     <link rel="stylesheet" href="/style.css" />
 </head>
 
-<!-- below is the body for our content -->
+<!-- In the body, this is where all the content that will show on website -->
 
 <body>
-<!-- ................... header section................... -->
 
-<header class="grid text-center tall100vh md-tall80">
+    <!-- ................... header section................... -->
+
+<header class="grid tall60vh">
+ 
     <div class="col-12 header-nav grid-top">
-        <div class="col-5_sm-12-middle sm-padded-b-0">
-            <a href="/index.html" class="logo">
-                <h2> The sleep co </h2>
-            </a>
-        </div>
-        <div class="col-7_sm-12-middle text-right sm-text-center">
-            <nav>
-                <a href="/index.html"> Home </a>
-                <a href="/about.html"> About </a>
-                <a href="/products.html"> Products </a>
-                <a href="/footer.html"> Contact </a>
-            </nav>
-        </div>
+    <div class="col-5_sm-12-middle sm-padded-b-0">
+        <a href="/index.html" class="logo">
+            <h2> The sleep co </h2>
+        </a>
     </div>
-    <div class="col-12">
+
+    <nav class="col-7_sm-12-middle text-right sm-text-center">
+        <a href="/index.html"> Home </a>
+        <a href="/about.html"> About </a>
+        <a href="/products.html"> Products </a>
+        <a href="/footer.html"> Contact </a>
+    </nav>
+ 
+</div>
+
+    <div class="col-12 text-center">
         <h3 class="font-weight-xbold editable">
             We are the <span class="featuredcolor-text"> best </span> 
         </h3>
@@ -148,8 +152,8 @@
 </section>
 
 
-   <!-- .........................footer.................. -->
 
+<!-- .........................footer.................. -->
 <footer class="bg-dark padded grid-spaceBetween">
     <div class="col-4-bottom">
         <h2> let's 
@@ -165,7 +169,6 @@
         <p> <strong>instagram</strong>: <a href="https://www.instagram/thesleepco"></a> @thesleepco </p>
     </div>
 </footer>
-    
-</body>
 
+</body>
 </html>
