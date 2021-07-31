@@ -22,6 +22,10 @@
 <!-- animate on scroll link -->
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+
+<!-- Lightgallery for pop-ups  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!-- this is our own css stylesheet connection instruction: link + what + where -->
     <link rel="stylesheet" href="/style.css" />
 </head>
@@ -78,60 +82,129 @@
     </header>
 
 <!--  ..................gallery section................-->
+
+ <!-- popup gallery -->
+
 <section class="padded">
+
+  <h2>popup gallery</h2>
+
+  <div class="gallery grid" id="lightgallery">
+
+    
+    <!-- we change our <div> parent columns into anchor <a> links. Then add the href=”” attribute and inside it, the loop tag  for our image variable -->
+    <a class="col-4_sm-12 gallery-item" href="/assets/the-sleep-co-lamp.jpg">
+      <div class="bg-img square"
+           style="background-image: url('/assets/the-sleep-co-lamp.jpg');">
+      </div>
+    </a>
+    
+    <!-- we change our <div> parent columns into anchor <a> links. Then add the href=”” attribute and inside it, the loop tag  for our image variable -->
+    <a class="col-4_sm-12 gallery-item" href="/assets/the-sleep-co-white.jpg">
+      <div class="bg-img square"
+           style="background-image: url('/assets/the-sleep-co-white.jpg');">
+      </div>
+    </a>
+    
+    <!-- we change our <div> parent columns into anchor <a> links. Then add the href=”” attribute and inside it, the loop tag  for our image variable -->
+    <a class="col-4_sm-12 gallery-item" href="/assets/the-sleep-co-yellow.jpg">
+      <div class="bg-img square"
+           style="background-image: url('/assets/the-sleep-co-yellow.jpg');">
+      </div>
+    </a>
+    
+    <!-- we change our <div> parent columns into anchor <a> links. Then add the href=”” attribute and inside it, the loop tag  for our image variable -->
+    <a class="col-12 gallery-item" href="/assets/the-sleep-co-pug.jpg">
+      <div class="bg-img landscape"
+           style="background-image: url('/assets/the-sleep-co-pug.jpg');">
+      </div>
+    </a>
+    
+    <!-- we change our <div> parent columns into anchor <a> links. Then add the href=”” attribute and inside it, the loop tag  for our image variable -->
+    <a class="col-6 gallery-item" href="/assets/the-sleep-co-yellow.jpg">
+      <div class="bg-img landscape"
+           style="background-image: url('/assets/the-sleep-co-yellow.jpg');">
+      </div>
+    </a>
+    
+    <!-- we change our <div> parent columns into anchor <a> links. Then add the href=”” attribute and inside it, the loop tag  for our image variable -->
+    <a class="col-6 gallery-item" href="/assets/the-sleep-co-white.jpg">
+      <div class="bg-img landscape"
+           style="background-image: url('/assets/the-sleep-co-white.jpg');">
+      </div>
+    </a>
+    
+  </div>
+
+</section>
+
+<!-- other popup gallery, triggered by button to see all the pictures for instance -->
+
+<section class="padded">
+
+  <h2>popup gallery</h2>
+  <div class="gallery grid" id="lightgallery-2">
+    <a class="button" href="/assets/the-sleep-co-lamp.jpg" title="Funny dog 1">
+        View Our Work 
+    </a> 
+    <a href="/assets/the-sleep-co-pug.jpg" title="pug"></a> 
+    <a href="/assets/the-sleep-co-white.jpg" title="sheets"></a> 
+    <a href="/assets/the-sleep-co-yellow.jpg" title="yellow"></a> 
+    <a href="/assets/the-sleep-co-pug.jpg" title="pug"></a> 
+    <a href="/assets/the-sleep-co-white.jpg" title="sheets"></a> 
+    <a href="/assets/the-sleep-co-yellow.jpg" title="yellow"></a>  
+  </div>
+</section>
+
+
+<!-- standard gallery -->
+
+<section class="padded">
+
+    <h2>standard gallery</h2>
 
     <div class="gallery grid">
 
         
-    
         <div class="col-4_sm-12">
           <div class="bg-img square"
                style="background-image: url('/assets/the-sleep-co-lamp.jpg');">
           </div>
         </div>
-    
         
-    
         <div class="col-4_sm-12">
           <div class="bg-img square"
                style="background-image: url('/assets/the-sleep-co-white.jpg');">
           </div>
         </div>
-    
         
-    
         <div class="col-4_sm-12">
           <div class="bg-img square"
                style="background-image: url('/assets/the-sleep-co-yellow.jpg');">
           </div>
         </div>
-    
         
-    
         <div class="col-12">
           <div class="bg-img landscape"
                style="background-image: url('/assets/the-sleep-co-pug.jpg');">
           </div>
         </div>
-    
         
-    
         <div class="col-6">
           <div class="bg-img landscape"
                style="background-image: url('/assets/the-sleep-co-yellow.jpg');">
           </div>
         </div>
-    
         
-    
         <div class="col-6">
           <div class="bg-img landscape"
                style="background-image: url('/assets/the-sleep-co-white.jpg');">
           </div>
         </div>
-    
         
     </div>
+
+</section>
 
 <!-- <div class="gallery grid">
         <div class="col-6">
@@ -178,6 +251,10 @@
 
 <!-- animate on scroll -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Lightgallery for pop-ups  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+
 
 <!-- our custom javassript -->
 <script src="/script.js" ></script>

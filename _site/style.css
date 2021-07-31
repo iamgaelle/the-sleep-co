@@ -331,6 +331,19 @@ footer a {
     padding: 0.5%;
   }
 
+  .gallery .gallery-item {
+      border-bottom: none;
+  }
+
+  /* background of gallery when active */
+  .lg-backdrop {
+      background-color: #192B37;
+  }
+
+  .lg-backdrop.in {
+    opacity: 0.95;
+}
+
 /* .........................contact form styling................ */
 
 form input, 

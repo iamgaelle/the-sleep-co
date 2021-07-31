@@ -37,20 +37,64 @@ gallery:
     </header>
 
 <!--  ..................gallery section................-->
+
+ <!-- popup gallery -->
+
 <section class="padded">
+
+  <h2>popup gallery</h2>
+
+  <div class="gallery grid" id="lightgallery">
+
+    {% for item in page.gallery %}
+    <!-- we change our <div> parent columns into anchor <a> links. Then add the href=”” attribute and inside it, the loop tag {{ }} for our image variable -->
+    <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+      <div class="bg-img {{item.aspect-ratio}}"
+           style="background-image: url('{{item.background_image}}');">
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+</section>
+
+<!-- other popup gallery, triggered by button to see all the pictures for instance -->
+
+<section class="padded">
+
+  <h2>popup gallery</h2>
+  <div class="gallery grid" id="lightgallery-2">
+    <a class="button" href="/assets/the-sleep-co-lamp.jpg" title="Funny dog 1">
+        View Our Work 
+    </a> 
+    <a href="/assets/the-sleep-co-pug.jpg" title="pug"></a> 
+    <a href="/assets/the-sleep-co-white.jpg" title="sheets"></a> 
+    <a href="/assets/the-sleep-co-yellow.jpg" title="yellow"></a> 
+    <a href="/assets/the-sleep-co-pug.jpg" title="pug"></a> 
+    <a href="/assets/the-sleep-co-white.jpg" title="sheets"></a> 
+    <a href="/assets/the-sleep-co-yellow.jpg" title="yellow"></a>  
+  </div>
+</section>
+
+
+<!-- standard gallery -->
+
+<section class="padded">
+
+    <h2>standard gallery</h2>
 
     <div class="gallery grid">
 
         {% for item in page.gallery %}
-    
         <div class="{{item.column-size}}">
           <div class="bg-img {{item.aspect-ratio}}"
                style="background-image: url('{{item.background_image}}');">
           </div>
         </div>
-    
         {% endfor %}
     </div>
+
+</section>
 
 <!-- <div class="gallery grid">
         <div class="col-6">
