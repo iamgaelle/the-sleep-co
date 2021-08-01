@@ -1,24 +1,32 @@
 ---
 layout: default
+popup-gallery: true
+gallery-background: bg-dark
 gallery:
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /assets/the-sleep-co-lamp.jpg
+    type: lamp
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /assets/the-sleep-co-white.jpg
+    type: sheets
   - column-size: col-4_sm-12
     aspect-ratio: square
     background_image: /assets/the-sleep-co-yellow.jpg
+    type: yellow
   - column-size: col-12
     aspect-ratio: landscape
     background_image: /assets/the-sleep-co-pug.jpg
+    type: pug
   - column-size: col-6
     aspect-ratio: landscape
     background_image: /assets/the-sleep-co-yellow.jpg
+    type: yellow
   - column-size: col-6
     aspect-ratio: landscape
     background_image: /assets/the-sleep-co-white.jpg
+    type: sheets
 ---
 <!-- NOTE: we use background_image instead of background-image so cloudcannon can show an image selctor option which is more intuitive  -->
 
@@ -38,29 +46,32 @@ gallery:
 
 <!--  ..................gallery section................-->
 
+{% if page.popup-gallery==true %} 
  <!-- popup gallery -->
 
-<section class="padded">
+ <section class="padded {{page.gallery-background}}">
 
   <h2>popup gallery</h2>
 
   <div class="gallery grid" id="lightgallery">
 
     {% for item in page.gallery %}
+    {% if item.type=='lamp' or item.type=='pug' or item.type=='sheets' %}
     <!-- we change our <div> parent columns into anchor <a> links. Then add the href=”” attribute and inside it, the loop tag {{ }} for our image variable -->
     <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
       <div class="bg-img {{item.aspect-ratio}}"
            style="background-image: url('{{item.background_image}}');">
       </div>
     </a>
+    {% endif %}
     {% endfor %}
   </div>
 
 </section>
 
-<!-- other popup gallery, triggered by button to see all the pictures for instance -->
 
-<section class="padded">
+<!-- other popup gallery, triggered by button to see all the pictures for instance -->
+<!-- <section class="padded">
 
   <h2>popup gallery</h2>
   <div class="gallery grid" id="lightgallery-2">
@@ -74,11 +85,10 @@ gallery:
     <a href="/assets/the-sleep-co-white.jpg" title="sheets"></a> 
     <a href="/assets/the-sleep-co-yellow.jpg" title="yellow"></a>  
   </div>
-</section>
+</section> -->
 
-
+{% else %}
 <!-- standard gallery -->
-
 <section class="padded">
 
     <h2>standard gallery</h2>
@@ -95,6 +105,8 @@ gallery:
     </div>
 
 </section>
+
+{% endif %}
 
 <!-- <div class="gallery grid">
         <div class="col-6">
